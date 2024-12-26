@@ -1,0 +1,53 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 45vh;
+  width: 100%; /* Establecer el ancho del contenedor del chat */
+  max-width: 600px; /* Establecer un ancho máximo para el contenedor del chat */
+  justify-content: flex-end;
+  padding: 0.5rem; /* Reducir el padding del contenedor del chat */
+  background-color: #f0f0f0;
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Reducir el espacio entre los mensajes */
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 100%; /* Asegurarse de que los mensajes no excedan el ancho del contenedor */
+  padding: 0.5rem; /* Reducir el padding de los mensajes */
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333; /* Color del texto */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  color: #000; /* Color del texto */
+}
+
+.message.ai {
+  align-self: flex-start;
+  background-color: #ececec;
+  color: #000; /* Color del texto */
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media (max-width: 600px) {
+  .chat-container {
+    width: 100%; /* Ajustar el ancho del contenedor del chat en pantallas pequeñas */
+    padding: 0.25rem; /* Reducir el padding en pantallas pequeñas */
+  }
+
+  .message {
+    padding: 0.25rem; /* Reducir el padding de los mensajes en pantallas pequeñas */
+  }
+}
