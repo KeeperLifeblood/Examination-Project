@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./MessageList.css";
-import { Theme } from "@chakra-ui/react";
 
 interface Message {
   id: number;
   message_text: string;
   bot_sender: number;
 }
-
-<Theme appearance="dark">
-  <div />
-</Theme>;
 
 const MessageList: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
