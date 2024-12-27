@@ -85,3 +85,22 @@ h3 {
 .read-the-docs {
   color: #888;
 }
+/* Estilos para el Bonton */
+.button-custom {
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #b4a7ed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-custom:hover {
+  background-color: #5e509b;
+}
+
+.button-clicked {
+  background-color: #5e509b;
+}
