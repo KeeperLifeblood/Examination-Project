@@ -6,7 +6,7 @@
   max-width: 600px; /* Establecer un ancho máximo para el contenedor del chat */
   justify-content: flex-end;
   padding: 0.5rem; /* Reducir el padding del contenedor del chat */
-  background-color: #f0f0f0;
+  background-color: #2d2d2d;
   margin: 0 auto; /* Centrar el contenedor horizontalmente */
   box-sizing: border-box; /* Incluir padding y border en el ancho total */
 }
@@ -19,9 +19,9 @@
 }
 
 .message {
-  max-width: 100%; /* Asegurarse de que los mensajes no excedan el ancho del contenedor */
-  padding: 0.5rem; /* Reducir el padding de los mensajes */
-  border-radius: 10px;
+  max-width: 80%; /* Asegurarse de que los mensajes no excedan el ancho del contenedor */
+  padding: 0.25rem; /* Reducir el padding de los mensajes */
+  border-radius: 15px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #333; /* Color del texto */
@@ -30,7 +30,7 @@
 
 .message.user {
   align-self: flex-end;
-  background-color: #dcf8c6;
+  background-color: #acebce;
   color: #000; /* Color del texto */
 }
 

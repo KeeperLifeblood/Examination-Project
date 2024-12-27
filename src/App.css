@@ -6,25 +6,53 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #b4a7ed;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(px + 2vmin);
   color: white;
   width: 100%; /* Asegurar que el contenedor del título ocupe el 100% del ancho */
+  padding: 1rem;
   box-sizing: border-box; /* Incluir padding y border en el ancho total */
 }
 
 .App {
   text-align: center;
+  border: 2px solid #b4a7ed; /* Añade un borde de 2px de color #333 */
+  border-radius: 10px; /* Opcional: Añade bordes redondeados */
+  padding: 1rem; /* Opcional: Añade padding para separar el contenido del borde */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+
+.App-logo {
+  height: 18vmin;
+  pointer-events: none;
+  padding-top: 0%;
+  margin-bottom: 0.5rem;
+}
+
+.highlightI {
+  color: black;
+}
+
+.highlightA {
+  color: rgb(115 84 239);
+  box-shadow: #5e509b;
+}
+
+h1 {
+  margin: 0.05em 0;
+}
+h3 {
+  margin: 0.05em 0;
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 0.5em;
   will-change: filter;
   transition: filter 300ms;
 }
